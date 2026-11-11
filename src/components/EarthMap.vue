@@ -21,7 +21,7 @@
         :position="track.position"
         :billboard="
           track.type === 'iss'
-            ? { image: '/space-station.png', scale: 0.05 }
+            ? { image: `${baseUrl}space-station.png`, scale: 0.05 }
             : undefined
         "
         :point="
@@ -56,6 +56,8 @@ import { ecfKm, makeSatrec, orbitClassOf, ORBIT_CLASSES, periodMs } from "@/lib/
 import ControlPanel from "./ControlPanel.vue";
 import SatelliteInfo from "./SatelliteInfo.vue";
 import HudOverlay from "./HudOverlay.vue";
+
+const baseUrl = import.meta.env.BASE_URL;
 
 /** Cores do tema HUD (as mesmas de src/style.css) para o que o Cesium desenha. */
 const HUD_CYAN = "#38e1ff";

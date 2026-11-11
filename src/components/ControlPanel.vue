@@ -2,7 +2,7 @@
   <aside class="panel hud-panel" :class="{ collapsed }">
     <header class="panel-header">
       <div class="brand">
-        <img class="brand-logo" src="/logo.svg" alt="" width="34" height="34" />
+        <img class="brand-logo" :src="`${baseUrl}logo.svg`" alt="" width="34" height="34" />
         <h1>Rastreador <span class="h1-sub">de satélites</span></h1>
       </div>
       <button class="icon-btn" :title="collapsed ? 'Abrir painel' : 'Recolher painel'" @click="collapsed = !collapsed">
@@ -161,6 +161,8 @@ import { computePassesAsync } from "@/lib/passesClient";
 import type { Pass } from "@/lib/passes";
 import type { SatSource } from "@/types/satellite";
 import { compass, formatAge, formatDayTime, formatNumber } from "@/lib/format";
+
+const baseUrl = import.meta.env.BASE_URL;
 
 const store = useSatelliteStore();
 const collapsed = ref(window.innerWidth < 700);
