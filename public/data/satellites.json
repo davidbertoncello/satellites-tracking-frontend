@@ -1,0 +1,455 @@
+{
+  "generatedAt": "2026-11-06T18:35:53.003Z",
+  "sources": {
+    "tle": "celestrak.org",
+    "ephemeris": "https://api.starlink.com/public-files/ephemerides"
+  },
+  "satellites": [
+    {
+      "id": 25544,
+      "name": "ISS",
+      "type": "iss",
+      "tle": {
+        "line1": "1 25544U 98067A   26310.49826973  .00011492  00000+0  21472-3 0  9995",
+        "line2": "2 25544  51.6322 315.8635 0007225 355.0594   5.0322 15.49214228593815"
+      },
+      "ephemeris": null
+    },
+    {
+      "id": 44714,
+      "name": "STARLINK-1008",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 44714U 19074B   26309.43849054  .00196570  00000+0  16385-2 0  9990",
+        "line2": "2 44714  53.1444 101.4209 0000995 209.3914 150.7048 15.68968474386270"
+      },
+      "ephemeris": {
+        "path": "starlink/44714.json",
+        "start": "2026-11-06T12:43:42.000Z",
+        "stop": "2026-11-08T12:42:42.000Z"
+      }
+    },
+    {
+      "id": 48656,
+      "name": "STARLINK-2701",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 48656U 21044U   26309.61108665  .00046801  00000+0  12136-2 0  9996",
+        "line2": "2 48656  53.1605  71.8302 0002119  37.4917 322.6235 15.38573869300759"
+      },
+      "ephemeris": {
+        "path": "starlink/48656.json",
+        "start": "2026-11-06T12:28:42.000Z",
+        "stop": "2026-11-08T12:27:42.000Z"
+      }
+    },
+    {
+      "id": 52298,
+      "name": "STARLINK-3760",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 52298U 22041AP  26310.64203805 -.00001200  00000+0 -24407-4 0  9990",
+        "line2": "2 52298  53.1612  70.9868 0001060  71.8832 288.2286 15.34381945251333"
+      },
+      "ephemeris": {
+        "path": "starlink/52298.json",
+        "start": "2026-11-06T12:25:42.000Z",
+        "stop": "2026-11-09T12:25:42.000Z"
+      }
+    },
+    {
+      "id": 53410,
+      "name": "STARLINK-4492",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 53410U 22097Y   26309.16624444 -.00000255  00000+0  35631-5 0  9999",
+        "line2": "2 53410  53.1654 104.5916 0000474  22.7932 337.3091 15.34397583235087"
+      },
+      "ephemeris": {
+        "path": "starlink/53410.json",
+        "start": "2026-11-06T12:17:42.000Z",
+        "stop": "2026-11-09T12:17:42.000Z"
+      }
+    },
+    {
+      "id": 54840,
+      "name": "STARLINK-5368",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 54840U 22177W   26310.43448518  .00000644  00000+0  32941-4 0  9995",
+        "line2": "2 54840  43.0048 207.5281 0001167 267.5725  92.4993 15.27579280213936"
+      },
+      "ephemeris": {
+        "path": "starlink/54840.json",
+        "start": "2026-11-06T12:07:42.000Z",
+        "stop": "2026-11-09T12:07:42.000Z"
+      }
+    },
+    {
+      "id": 56326,
+      "name": "STARLINK-5980",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 56326U 23058K   26309.23350637  .00000474  00000+0  17021-4 0  9998",
+        "line2": "2 56326  97.2858 302.3375 0001065  87.9883 272.1482 15.33439578194098"
+      },
+      "ephemeris": {
+        "path": "starlink/56326.json",
+        "start": "2026-11-06T12:01:42.000Z",
+        "stop": "2026-11-09T12:01:42.000Z"
+      }
+    },
+    {
+      "id": 57415,
+      "name": "STARLINK-30208",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 57415U 23102M   26310.50833305  .00001239  00000+0  54522-4 0  9995",
+        "line2": "2 57415  43.0021 322.8598 0001133 244.9327 115.1408 15.27581955183178"
+      },
+      "ephemeris": {
+        "path": "starlink/57415.json",
+        "start": "2026-11-06T11:43:42.000Z",
+        "stop": "2026-11-09T11:43:42.000Z"
+      }
+    },
+    {
+      "id": 58243,
+      "name": "STARLINK-30864",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 58243U 23171P   26310.50002315  .00030329  00000+0  11076-2 0  9997",
+        "line2": "2 58243  43.0011 359.6751 0001486 265.6153 165.0038 15.27565858  5848"
+      },
+      "ephemeris": {
+        "path": "starlink/58243.json",
+        "start": "2026-11-06T11:32:42.000Z",
+        "stop": "2026-11-09T11:32:42.000Z"
+      }
+    },
+    {
+      "id": 59220,
+      "name": "STARLINK-31523",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 59220U 24046V   26310.17433560  .00001680  00000+0  60869-4 0  9992",
+        "line2": "2 59220  53.1569 107.8688 0001489  86.5951 273.5222 15.34396811150092"
+      },
+      "ephemeris": {
+        "path": "starlink/59220.json",
+        "start": "2026-11-06T11:26:42.000Z",
+        "stop": "2026-11-09T11:26:42.000Z"
+      }
+    },
+    {
+      "id": 59950,
+      "name": "STARLINK-11130",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 59950U 24107F   26308.72058732  .00000525  00000+0  91885-5 0  9992",
+        "line2": "2 59950  53.1568 148.1377 0001174 100.5936 259.5215 15.69714761139847"
+      },
+      "ephemeris": {
+        "path": "starlink/59950.json",
+        "start": "2026-11-06T11:53:42.000Z",
+        "stop": "2026-11-09T11:53:42.000Z"
+      }
+    },
+    {
+      "id": 61631,
+      "name": "STARLINK-32348",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 61631U 24191L   26310.41668981 -.00010730  00000+0 -38079-3 0  9991",
+        "line2": "2 61631  42.9996 232.9119 0001482 262.3088 123.2996 15.27592952  5845"
+      },
+      "ephemeris": {
+        "path": "starlink/61631.json",
+        "start": "2026-11-06T11:13:42.000Z",
+        "stop": "2026-11-09T11:13:42.000Z"
+      }
+    },
+    {
+      "id": 62557,
+      "name": "STARLINK-11478",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 62557U 25006D   26310.41668981  .00005462  00000+0  44603-4 0  9990",
+        "line2": "2 62557  43.0000 122.8398 0001583 270.9898 312.3185 15.71606892  5954"
+      },
+      "ephemeris": {
+        "path": "starlink/62557.json",
+        "start": "2026-11-06T11:48:42.000Z",
+        "stop": "2026-11-09T11:48:42.000Z"
+      }
+    },
+    {
+      "id": 63480,
+      "name": "STARLINK-33721",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 63480U 25070W   26310.33336806 -.00004985  00000+0 -17178-3 0  9993",
+        "line2": "2 63480  43.0033 331.4563 0001380 271.0652 132.7058 15.27574922  5674"
+      },
+      "ephemeris": {
+        "path": "starlink/63480.json",
+        "start": "2026-11-06T11:02:42.000Z",
+        "stop": "2026-11-09T11:02:42.000Z"
+      }
+    },
+    {
+      "id": 64185,
+      "name": "STARLINK-34063",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 64185U 25113R   26310.28696751  .00023988  00000+0  78130-3 0  9993",
+        "line2": "2 64185  53.1593  46.8861 0001362  75.2015 284.9137 15.31739736 82084"
+      },
+      "ephemeris": {
+        "path": "starlink/64185.json",
+        "start": "2026-11-06T10:57:42.000Z",
+        "stop": "2026-11-09T10:57:42.000Z"
+      }
+    },
+    {
+      "id": 65058,
+      "name": "STARLINK-34779",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 65058U 25165C   26310.45905811  .00019108  00000+0  59275-3 0  9997",
+        "line2": "2 65058  97.2860  21.0331 0001899  96.0505 264.0954 15.33441615 71326"
+      },
+      "ephemeris": {
+        "path": "starlink/65058.json",
+        "start": "2026-11-06T10:43:42.000Z",
+        "stop": "2026-11-09T10:43:42.000Z"
+      }
+    },
+    {
+      "id": 65845,
+      "name": "STARLINK-35302",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 65845U 25221Y   26310.33336806  .00000479  00000+0  25308-4 0  9995",
+        "line2": "2 65845  53.1612  40.4831 0001281  84.5172  34.1153 15.34386291  5797"
+      },
+      "ephemeris": {
+        "path": "starlink/65845.json",
+        "start": "2026-11-06T10:37:42.000Z",
+        "stop": "2026-11-09T10:37:42.000Z"
+      }
+    },
+    {
+      "id": 66532,
+      "name": "STARLINK-35914",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 66532U 25265S   26310.25002315  .00000888  00000+0  41820-4 0  9994",
+        "line2": "2 66532  43.0037 353.8963 0001459 256.8554 154.5755 15.27545982  5793"
+      },
+      "ephemeris": {
+        "path": "starlink/66532.json",
+        "start": "2026-11-06T10:29:42.000Z",
+        "stop": "2026-11-09T10:29:42.000Z"
+      }
+    },
+    {
+      "id": 67454,
+      "name": "STARLINK-36517",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 67454U 26008K   26310.25489535  .00018239  00000+0  67040-3 0  9997",
+        "line2": "2 67454  43.0026 281.2494 0001358 268.1454  91.9242 15.27593724 46518"
+      },
+      "ephemeris": {
+        "path": "starlink/67454.json",
+        "start": "2026-11-06T10:21:42.000Z",
+        "stop": "2026-11-09T10:21:42.000Z"
+      }
+    },
+    {
+      "id": 68107,
+      "name": "STARLINK-37005",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 68107U 26044G   26310.35240157  .00028067  00000+0  86821-3 0  9997",
+        "line2": "2 68107  97.2832 268.5756 0000893 104.4551 255.6791 15.33455210 38616"
+      },
+      "ephemeris": {
+        "path": "starlink/68107.json",
+        "start": "2026-11-06T10:10:42.000Z",
+        "stop": "2026-11-09T10:10:42.000Z"
+      }
+    },
+    {
+      "id": 69034,
+      "name": "STARLINK-37611",
+      "type": "starlink",
+      "tle": {
+        "line1": "1 69034U 26101K   26310.33338638  .00010745  00000+0  33471-3 0  9998",
+        "line2": "2 69034  97.2871 163.1147 0002441  94.0832 266.0690 15.33441201 28359"
+      },
+      "ephemeris": {
+        "path": "starlink/69034.json",
+        "start": "2026-11-06T10:05:42.000Z",
+        "stop": "2026-11-09T10:05:42.000Z"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "key": "stations",
+      "label": "Estações e naves tripuladas",
+      "category": "Estações",
+      "count": 15,
+      "path": "groups/stations.json"
+    },
+    {
+      "key": "visual",
+      "label": "Mais brilhantes (olho nu)",
+      "category": "Visíveis a olho nu",
+      "count": 156,
+      "path": "groups/visual.json"
+    },
+    {
+      "key": "starlink",
+      "label": "Starlink (todos)",
+      "category": "Megaconstelações",
+      "count": 10626,
+      "path": "groups/starlink.json"
+    },
+    {
+      "key": "oneweb",
+      "label": "OneWeb",
+      "category": "Megaconstelações",
+      "count": 651,
+      "path": "groups/oneweb.json"
+    },
+    {
+      "key": "kuiper",
+      "label": "Amazon Kuiper",
+      "category": "Megaconstelações",
+      "count": 391,
+      "path": "groups/kuiper.json"
+    },
+    {
+      "key": "qianfan",
+      "label": "Qianfan (China)",
+      "category": "Megaconstelações",
+      "count": 238,
+      "path": "groups/qianfan.json"
+    },
+    {
+      "key": "gps-ops",
+      "label": "GPS",
+      "category": "Navegação (GNSS)",
+      "count": 32,
+      "path": "groups/gps-ops.json"
+    },
+    {
+      "key": "glo-ops",
+      "label": "GLONASS",
+      "category": "Navegação (GNSS)",
+      "count": 26,
+      "path": "groups/glo-ops.json"
+    },
+    {
+      "key": "galileo",
+      "label": "Galileo",
+      "category": "Navegação (GNSS)",
+      "count": 32,
+      "path": "groups/galileo.json"
+    },
+    {
+      "key": "beidou",
+      "label": "BeiDou",
+      "category": "Navegação (GNSS)",
+      "count": 54,
+      "path": "groups/beidou.json"
+    },
+    {
+      "key": "weather",
+      "label": "Meteorológicos",
+      "category": "Clima e observação da Terra",
+      "count": 73,
+      "path": "groups/weather.json"
+    },
+    {
+      "key": "resource",
+      "label": "Observação da Terra",
+      "category": "Clima e observação da Terra",
+      "count": 167,
+      "path": "groups/resource.json"
+    },
+    {
+      "key": "brasil",
+      "label": "Satélites brasileiros",
+      "category": "Clima e observação da Terra",
+      "count": 6,
+      "path": "groups/brasil.json"
+    },
+    {
+      "key": "geo",
+      "label": "Geoestacionários",
+      "category": "Comunicações",
+      "count": 568,
+      "path": "groups/geo.json"
+    },
+    {
+      "key": "science",
+      "label": "Científicos",
+      "category": "Ciência e radioamador",
+      "count": 45,
+      "path": "groups/science.json"
+    },
+    {
+      "key": "amateur",
+      "label": "Radioamador",
+      "category": "Ciência e radioamador",
+      "count": 95,
+      "path": "groups/amateur.json"
+    },
+    {
+      "key": "cubesat",
+      "label": "CubeSats",
+      "category": "Ciência e radioamador",
+      "count": 84,
+      "path": "groups/cubesat.json"
+    },
+    {
+      "key": "last-30-days",
+      "label": "Lançados nos últimos 30 dias",
+      "category": "Eventos",
+      "count": 250,
+      "path": "groups/last-30-days.json"
+    },
+    {
+      "key": "cosmos-2251-debris",
+      "label": "Detritos Cosmos 2251 (colisão 2009)",
+      "category": "Detritos",
+      "count": 583,
+      "path": "groups/cosmos-2251-debris.json"
+    },
+    {
+      "key": "iridium-33-debris",
+      "label": "Detritos Iridium 33 (colisão 2009)",
+      "category": "Detritos",
+      "count": 109,
+      "path": "groups/iridium-33-debris.json"
+    },
+    {
+      "key": "fengyun-1c-debris",
+      "label": "Detritos Fengyun-1C (teste ASAT 2007)",
+      "category": "Detritos",
+      "count": 1975,
+      "path": "groups/fengyun-1c-debris.json"
+    },
+    {
+      "key": "cosmos-1408-debris",
+      "label": "Detritos Cosmos 1408 (teste ASAT 2021)",
+      "category": "Detritos",
+      "count": 2,
+      "path": "groups/cosmos-1408-debris.json"
+    }
+  ]
+}

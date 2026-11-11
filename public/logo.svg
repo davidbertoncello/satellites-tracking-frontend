@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>Rastreador de satélites</title>
+  <!-- cantos de mira (HUD) -->
+  <path d="M3 13V3h10M51 3h10v10M61 51v10H51M13 61H3V51" stroke="#38e1ff" stroke-opacity=".55" stroke-width="2.4"/>
+  <!-- órbita completa (trecho de trás aparece atenuado) -->
+  <ellipse cx="32" cy="32" rx="25" ry="8.5" transform="rotate(-24 32 32)" stroke="#38e1ff" stroke-opacity=".4" stroke-width="2.4"/>
+  <!-- globo -->
+  <circle cx="32" cy="32" r="12.5" fill="#04182a" stroke="#38e1ff" stroke-width="2.8"/>
+  <ellipse cx="32" cy="32" rx="5.5" ry="12.5" stroke="#38e1ff" stroke-opacity=".4" stroke-width="1.6"/>
+  <path d="M19.5 32h25" stroke="#38e1ff" stroke-opacity=".4" stroke-width="1.6"/>
+  <g transform="translate(32 32) rotate(-24)">
+    <!-- trecho da frente -->
+    <path d="M25 0A25 8.5 0 0 1 -25 0" stroke="#38e1ff" stroke-width="2.8"/>
+    <!-- satélite -->
+    <g transform="translate(-17 6.23) rotate(108)">
+      <rect x="-8.5" y="-1.8" width="4.6" height="3.6" rx=".6" fill="#ffb02e"/>
+      <rect x="3.9" y="-1.8" width="4.6" height="3.6" rx=".6" fill="#ffb02e"/>
+      <path d="M-4 0h8" stroke="#ffb02e" stroke-width="1.4"/>
+      <rect x="-2.6" y="-2.6" width="5.2" height="5.2" rx=".8" transform="rotate(45)" fill="#ffb02e" stroke="#01060c" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

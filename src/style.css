@@ -1,0 +1,240 @@
+/*
+ * Base global + tema HUD (painéis "tech" sobre o globo).
+ * Cores e fontes ficam em variáveis para os componentes reaproveitarem.
+ */
+:root {
+  --hud-cyan: #38e1ff;
+  --hud-cyan-soft: rgba(56, 225, 255, 0.55);
+  --hud-cyan-dim: rgba(56, 225, 255, 0.22);
+  --hud-cyan-faint: rgba(56, 225, 255, 0.07);
+  --hud-amber: #ffb02e;
+  --hud-amber-dim: rgba(255, 176, 46, 0.25);
+  --hud-red: #ff5468;
+  --hud-text: #d8f6ff;
+  --hud-muted: #6f97a8;
+  --hud-bg: rgba(2, 12, 22, 0.8);
+  --hud-font-display: "Orbitron", "Rajdhani", system-ui, sans-serif;
+  --hud-font: "Rajdhani", system-ui, sans-serif;
+  --hud-font-mono: "Share Tech Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  color-scheme: dark;
+  font-family: var(--hud-font);
+  color: var(--hud-text);
+  background: #01060c;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  background: #01060c;
+}
+
+/* ---------- Painel HUD ---------- */
+
+.hud-panel {
+  --cut: 14px;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  color: var(--hud-text);
+  font: 500 14px/1.35 var(--hud-font);
+  text-align: left;
+  z-index: 10;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--hud-cyan-dim) transparent;
+  background:
+    linear-gradient(180deg, rgba(56, 225, 255, 0.06), transparent 120px),
+    repeating-linear-gradient(0deg, rgba(56, 225, 255, 0.025) 0 1px, transparent 1px 3px),
+    var(--hud-bg);
+  border: 1px solid var(--hud-cyan-dim);
+  box-shadow:
+    inset 0 0 28px rgba(56, 225, 255, 0.08),
+    0 0 0 1px rgba(0, 0, 0, 0.4);
+  clip-path: polygon(
+    var(--cut) 0,
+    100% 0,
+    100% calc(100% - var(--cut)),
+    calc(100% - var(--cut)) 100%,
+    0 100%,
+    0 var(--cut)
+  );
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Cantos em colchete, como mira de HUD. */
+.hud-panel::before,
+.hud-panel::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  border-color: var(--hud-cyan);
+  border-style: solid;
+  filter: drop-shadow(0 0 4px var(--hud-cyan));
+}
+.hud-panel::before {
+  top: 3px;
+  right: 3px;
+  border-width: 2px 2px 0 0;
+}
+.hud-panel::after {
+  bottom: 3px;
+  left: 3px;
+  border-width: 0 0 2px 2px;
+}
+
+.hud-panel h1 {
+  margin: 0;
+  font: 700 14px/1.2 var(--hud-font-display);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--hud-cyan);
+  text-shadow: 0 0 10px rgba(56, 225, 255, 0.55);
+  word-break: break-word;
+}
+
+.hud-panel h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 18px 0 8px;
+  font: 600 10.5px/1.2 var(--hud-font-display);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--hud-amber);
+}
+.hud-panel h2::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  flex: none;
+  background: var(--hud-amber);
+  box-shadow: 0 0 6px var(--hud-amber);
+  transform: rotate(45deg);
+}
+.hud-panel h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--hud-amber-dim), transparent);
+}
+
+.hud-panel h3 {
+  margin: 10px 0 3px;
+  font: 600 12px/1.2 var(--hud-font);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--hud-cyan-soft);
+}
+
+.hud-panel .muted {
+  color: var(--hud-muted);
+}
+.hud-panel .small {
+  font-size: 13px;
+  margin: 4px 0;
+}
+.hud-panel .error {
+  color: var(--hud-red);
+}
+.hud-panel .mono,
+.hud-panel code {
+  font-family: var(--hud-font-mono);
+  font-size: 0.92em;
+}
+
+.hud-panel button {
+  font: 600 12px/1 var(--hud-font);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 7px 12px;
+  color: var(--hud-cyan);
+  background: var(--hud-cyan-faint);
+  border: 1px solid var(--hud-cyan-dim);
+  border-radius: 0;
+  clip-path: polygon(6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 6px);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, box-shadow 0.15s, color 0.15s;
+}
+.hud-panel button:hover:not(:disabled),
+.hud-panel button.active {
+  background: rgba(56, 225, 255, 0.18);
+  border-color: var(--hud-cyan);
+  color: #fff;
+  box-shadow: inset 0 0 12px rgba(56, 225, 255, 0.35);
+}
+.hud-panel button:focus-visible {
+  outline: 1px solid var(--hud-amber);
+  outline-offset: 2px;
+}
+.hud-panel button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.hud-panel input[type="number"] {
+  font: 15px/1.2 var(--hud-font-mono);
+  padding: 4px 6px;
+  color: var(--hud-cyan);
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid var(--hud-cyan-dim);
+  border-radius: 0;
+  outline: none;
+}
+.hud-panel input[type="number"]:focus {
+  border-color: var(--hud-cyan);
+  box-shadow: 0 0 8px rgba(56, 225, 255, 0.35);
+}
+
+.hud-panel input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  flex: none;
+  width: 13px;
+  height: 13px;
+  margin: 0;
+  border: 1px solid var(--hud-cyan-soft);
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: box-shadow 0.15s, background 0.15s;
+}
+.hud-panel input[type="checkbox"]:checked {
+  background: rgba(56, 225, 255, 0.15);
+  box-shadow: 0 0 8px rgba(56, 225, 255, 0.6);
+}
+.hud-panel input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: var(--hud-cyan);
+}
+.hud-panel input[type="checkbox"]:focus-visible {
+  outline: 1px solid var(--hud-amber);
+  outline-offset: 2px;
+}
+
+/* Rodapé do Cesium mais discreto (a atribuição continua visível). */
+.cesium-widget-credits {
+  opacity: 0.55;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hud-panel * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
