@@ -3,6 +3,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    # Todo dia às 06:17 UTC: as efemérides da Starlink valem no máximo 72 h
+    - cron: "17 6 * * *"
 
 permissions:
   contents: read
@@ -23,6 +26,10 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      # Baixa TLEs/efemérides atuais. Se as fontes falharem, segue com os
+      # dados versionados em public/data (o script não deixa dados pela metade).
+      - run: npm run update-data
+        continue-on-error: true
       # vite build direto: o type-check (vue-tsc) tem erros pré-existentes
       - run: npx vite build --base=/${{ github.event.repository.name }}/
       # SPA fallback: o Pages serve o 404.html em rotas que não existem como arquivo
